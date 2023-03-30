@@ -1,0 +1,211 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 50vw;
+  margin: 200px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2em;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.3);
+}
+
+.results {
+  border: 1px solid black;
+  border-radius: 2em;
+  text-align: center;
+  display: grid;
+  padding: 0;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(105, 105, 105, 1) 100%
+  );
+  color: whitesmoke;
+}
+
+.title {
+  padding-top: 25px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.currentScore {
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 70% 20%;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    0deg,
+    rgba(105, 105, 105, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.yourScore {
+  font-size: 5em;
+  padding-top: 30px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  align-self: flex-end;
+}
+
+.outOf {
+  color: rgb(245, 245, 245, 0.4);
+}
+
+.txt {
+  font-size: 3em;
+  align-self: center;
+}
+
+.para {
+  width: 70%;
+  justify-self: center;
+  align-self: flex-start;
+  color: rgb(245, 245, 245, 0.4);
+}
+
+/* 2nd card */
+.summary {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  display: grid;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 25px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.titleTwo {
+  font-size: 20px;
+  align-self: self-start;
+}
+
+.reaction {
+  background: rgb(255, 237, 237);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.5em;
+}
+
+.reaction p {
+  color: red;
+  font-size: 1.05em;
+}
+
+.score {
+  font-family: sans-serif;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0, 0.3);
+}
+
+.verb {
+  display: flex;
+}
+
+.reac {
+  display: flex;
+}
+
+.mem {
+  display: flex;
+}
+
+.vis {
+  display: flex;
+}
+
+.memory {
+  background: rgb(252, 249, 222);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.5em;
+}
+
+.memory p {
+  padding-right: 100px;
+  color: rgb(255, 196, 0);
+  font-size: 1.05em;
+}
+
+.verbal {
+  background: rgb(235, 254, 233);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.5em;
+}
+
+.verbal p {
+  padding-right: 100px;
+  color: rgb(2, 170, 94);
+  font-size: 1.05em;
+}
+
+.visual {
+  background: rgb(250, 243, 255);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 0.5em;
+}
+
+.visual p {
+  padding-right: 100px;
+  color: rgb(84, 47, 164);
+  font-size: 1.05em;
+}
+
+button {
+  grid-row: 6 / span 2;
+  height: 45%;
+  border-radius: 2em;
+  color: whitesmoke;
+  background-color: black;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+img {
+  padding-right: 10px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+  }
+}
